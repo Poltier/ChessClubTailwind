@@ -1,0 +1,4 @@
+.footer-link {
+    @apply text-green-title font-bold hover:text-gray-title;
+    transition: color 0.3s ease;
+  }

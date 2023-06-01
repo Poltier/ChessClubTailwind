@@ -8,8 +8,9 @@ module.exports = {
       },
       colors: {
         "header-gray": '#F8F9FA',
-        "green": "#a1cbd1b7",
+        "green-title": "#297d8a",
         "gray-title": "#0000008c",
+        "uoc-corporate": "#000078",
       },
       fontFamily: {
         "brand": ["Roboto", "sans-serif"],
