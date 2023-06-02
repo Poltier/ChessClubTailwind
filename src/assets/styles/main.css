@@ -1,7 +1,0 @@
-@import 'tailwind.css';
-
-@import "npm:@fortawesome/fontawesome-free/css/all.css";
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

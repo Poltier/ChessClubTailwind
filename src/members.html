@@ -1,18 +1,106 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css"><!-- do not remove this line! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de descripción de miembros del club de ajedrez">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/tailwind.css"><!-- do not remove this line! -->
     <title>Members</title>
   </head>
-  <body class="m-0 p-0 box-border">
+  <body>
     <include src="./views/header.html"></include>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <section class="flex flex-col sm:flex-col justify-between items-center max-w-[1140px] mx-auto px-5 mb-5 mt-5">
+      <h2 class="mb-4 text-center text-green-title text-3xl font-medium">Chess Club Members</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Miembro 1 -->
+        <div class="member-card">
+          <img src="./assets/images/members/member1.jpg" class="card-img-top" alt="Miembro 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Enric Collins</h5>
+            <p class="card-text">Enric has been playing chess since he was a 
+              child and has a passion for teaching others about the game. 
+              He volunteers as a chess coach at his local community center 
+              and has helped many young players improve their skills.</p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">ELO: #1</small>
+          </div>
+        </div>
+        <!-- Miembro 2 -->
+        <div class="member-card">
+          <img src="./assets/images/members/member2.jpg" class="card-img-top" alt="Miembro 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Ethan Jameson</h5>
+            <p class="card-text">Ethan is a competitive chess player who has 
+              won several national tournaments in the UK. He is known for his 
+              aggressive playing style and his ability to find tactical opportunities 
+              in his games.</p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">ELO: #23</small>
+          </div>
+        </div>
+        <!-- Miembro 3 -->
+        <div class="member-card">
+          <img src="./assets/images/members/member3.jpg" class="card-img-top" alt="Miembro 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sophie Taylor</h5>
+            <p class="card-text"> Sophie is a chess enthusiast and enjoys playing 
+              online with players from around the world. She also enjoys studying 
+              chess openings and is always trying to learn new strategies to use 
+              in her games.</p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">ELO: #45</small>
+          </div>
+        </div>
+        <!-- Miembro 4 -->
+        <div class="member-card">
+          <img src="./assets/images/members/member4.jpg" class="card-img-top" alt="Miembro 4">
+          <div class="card-body text-center">
+            <h5 class="card-title">Clara Wilson</h5>
+            <p class="card-text">Clara is a chess prodigy who started playing at a 
+              young age and quickly rose through the ranks. She has won several 
+              international tournaments and is considered one of the top young 
+              players in the world.</p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">ELO: #210</small>
+          </div>
+        </div>
+        <!-- Miembro 5 -->
+        <div class="member-card">
+          <img src="./assets/images/members/member5.jpg" class="card-img-top" alt="Miembro 5">
+          <div class="card-body text-center">
+            <h5 class="card-title">Oliver Davies</h5>
+            <p class="card-text">Oliver is a chess historian and author who 
+              has written several books on the history of the game. He is 
+              also a strong player and enjoys analyzing classic games to 
+              gain insight into the strategies and tactics used by past masters.</p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">ELO: #260</small>
+          </div>
+        </div>
+        <!-- Miembro 6 -->
+        <div class="member-card">
+          <img src="./assets/images/members/member6.jpg" class="card-img-top" alt="Miembro 6">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sarah Turner</h5>
+            <p class="card-text">Sarah is an avid chess player and has won 
+              numerous local tournaments in her hometown of London. 
+              She enjoys analyzing chess games and is always looking 
+              for ways to improve her play.</p>
+          </div>
+          <div class="card-footer text-center">
+            <small class="text-muted">ELO: #300</small>
+          </div>
+        </div>
+      </div>
+    </section>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+
+

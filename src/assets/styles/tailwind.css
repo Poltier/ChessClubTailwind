@@ -1,4 +1,54 @@
-.footer-link {
-    @apply text-green-title font-bold hover:text-gray-title;
-    transition: color 0.3s ease;
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer components {
+    .member-card {
+      @apply bg-white flex flex-col flex-1 mx-2 mb-4 shadow-md rounded-lg;
+      max-width: calc(33.3333% - 1rem);
+      min-height: 100%;
+    }
+
+    .card-title {
+        @apply text-green-title font-medium text-xl;
+    }
+  
+    .card-img-top {
+      @apply w-full h-auto;
+    }
+
+    .card-text {
+        @apply text-green-title; 
+    }
+  
+    .card-body {
+      @apply flex flex-col justify-between p-4;
+    }
+  
+    .card-footer {
+      @apply p-4 text-center;
+    }
+
+    .footer-link {
+        @apply text-green-title font-bold hover:text-gray-title;
+        transition: color 0.3s ease;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    @layer components {
+      .member-card {
+        @apply max-w-[calc(50%-1rem)];
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    @layer components {
+      .member-card {
+        @apply max-w-full;
+      }
+    }
   }
