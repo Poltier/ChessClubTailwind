@@ -35,6 +35,29 @@
         @apply text-green-title font-bold hover:text-gray-title;
         transition: color 0.3s ease;
     }
+
+    .list-circle {
+        @apply relative flex items-center pl-10;
+    }
+  
+    .list-circle .list-item-content {
+        @apply ml-4;
+    }
+  
+    .list-circle p {
+        @apply mt-0 mb-4;
+    }
+  
+    .list-circle h5::before {
+        @apply absolute top-1/2 left-0 flex items-center justify-center w-8 h-8;
+        @apply bg-transparent border-2 border-blue-400 rounded-full;
+    }
+      
+
+    hr {
+        @apply border-t border-gray-300 my-4 opacity-25;
+    }
+  
   }
   
   @media (max-width: 767px) {

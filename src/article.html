@@ -1,18 +1,77 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Página de inicio de ajedrez">
     <link rel="stylesheet" type="text/css" href="./assets/styles/tailwind.css"><!-- do not remove this line! -->
-    <title>Blog</title>
+    <title>Chess Club</title>
   </head>
-  <body class="m-0 p-0 box-border">
+  <body>
     <include src="./views/header.html"></include>
-    <h1 class="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <article class="mb-5 mt-5 text-green-title">
+      <div class="text-center">
+        <img src="./assets/images/magnus carlsen.jpeg" class="mt-4 w-auto mx-auto" alt="Magnus Carlsen">
+        <h2 class="mt-3 text-3xl font-medium">Magnus Carlsen - The Chess Champion</h2>
+        <p>By Pol Tosca</p>
+      </div>
+      <hr>
+      <div class="flex flex-col sm:flex-col justify-between items-center max-w-[600px] mx-auto px-5 mb-5 mt-5">
+        <div class="md:flex">
+          <div class="md:w-1/2">
+            <h3 class="font-bold text-2xl">Discover the life and achievements of International Chess Grandmaster Magnus Carlsen.</h3>
+          </div>
+          <div class="md:w-1/2">
+            <p>
+              Explore the incredible journey and accomplishments of Magnus Carlsen, the International Chess Grandmaster who has dominated the chess world. Delve into his meteoric rise to fame, unique playing style, and the numerous victories that have established him as one of the all-time greats in chess.
+            </p>
+          </div>
+          <hr>
+        </div>
+        <ol class="mt-4 mb-4 list-none">
+          <li class="list-circle">
+            <div class="list-item-content">
+              <h5 class="font-bold">Youngest world champion</h5>
+              <p>
+                Magnus Carlsen is a Norwegian chess player who gained international recognition at a very young age. In 2013, at the age of 22, he became the youngest ever undisputed world chess champion, defeating the Indian grandmaster Vishwanathan Anand in a match held in Chennai, India. This victory marked the beginning of a long and successful career for Carlsen, who has been dominating the chess world ever since.
+              </p>
+            </div>
+          </li>
+          <li class="list-circle">
+            <div class="list-item-content">
+              <h5 class="font-bold">Participation in major tournaments</h5>
+              <p>
+                Carlsen has participated in many major tournaments throughout his career, including the Tata Steel Chess Tournament, the London Chess Classic, and the Sinquefield Cup. He has also been a regular contender in the Chess Olympiad, representing Norway in several editions of the tournament. In addition to his individual achievements, Carlsen has also contributed to the success of his country's chess team, leading them to the gold medal at the 2014 Chess Olympiad.
+              </p>
+            </div>
+          </li>
+          <li class="list-circle">
+            <div class="list-item-content">
+              <h5 class="font-bold">Playing style and skills</h5>
+              <p>
+                One of the most remarkable aspects of Carlsen's playing style is his ability to find creative solutions to complex chess problems. He is known for his unorthodox moves and his willingness to take risks, which often result in surprising victories. Carlsen's skills are not limited to his intuitive sense of the game, however; he is also a master of endgame techniques, which he has used to secure many important victories throughout his career. His achievements in chess have earned him numerous awards and accolades, and he is widely regarded as one of the greatest players of all time.
+              </p>
+            </div>
+          </li>
+        </ol>
+        <hr class="mt-4">
+        <blockquote class="">
+          <p class="mb-0">It doesn't matter how many good plays you make if a big mistake comes later.</p>
+          <footer class="text-end mt-2">Magnus Carlsen in <cite title="Chess World Cup">Chess World Cup</cite></footer>
+        </blockquote>
+        <p>
+          Magnus Carlsen is an international chess Grandmaster from Norway. He was born on November 30, 1990. Carlsen became the youngest world champion at the age of 22 in 2013. Since then, he has successfully defended his title on several occasions, cementing his position as one of the best chess players of all time.
+        </p>
+        <img src="./assets/images/magnus playing.jpg" class="mt-3 w-full" alt="Magnus Carlsen playing">
+        <p class="mt-3">
+          Throughout his career, Carlsen has participated in numerous major tournaments and won significant victories. His style of play is characterized by versatility and the ability to adapt to the strategies of his opponents. In addition to his skills at the chessboard, Carlsen is known for his methodical approach and his ability to remain calm under pressure.
+        </p>
+      </div>
+    </article>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>
+
+
